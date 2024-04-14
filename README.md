@@ -1,2 +1,2 @@
 # fargate-webserver
-Setting up a webserver with ECS on Fargate
+Setting up Linux and Windows webserver with ECS on Fargate
