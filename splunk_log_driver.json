@@ -1,0 +1,11 @@
+"containerDefinitions": [{
+		"logConfiguration": {
+			"logDriver": "splunk",
+			"options": {
+				"splunk-url": "https://cloud.splunk.com:8080",
+				"tag": "ecs-logs",
+			},
+			"secretOptions": [{
+				"name": "wr903GYj46nh2y7r9926hiKy72",
+				"valueFrom": "arn:aws:secretsmanager:region:aws_account_id:secret:splunk-token-KnrBkD"
+}],
