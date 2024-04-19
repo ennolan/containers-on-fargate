@@ -1,0 +1,23 @@
+"containerDefinitions": [{
+	"logConfiguration": {
+		"logDriver": "fluentd",
+		"options": {
+			"tag": "fluentd demo"
+		},
+		"secretOptions": [{
+			"name": "fluentd-address",
+			"valueFrom": "arn:aws:secretsmanager:region:aws_account_id:secret:fluentd-address-KnrBkD"
+		}]
+	},
+	"entryPoint": [],
+	"portMappings": [{
+             "hostPort": 80,
+             "protocol": "tcp",
+             "containerPort": 80
+             },
+             {
+		"hostPort": 24224,
+		"protocol": "tcp",
+		"containerPort": 24224
+	}]
+}],
